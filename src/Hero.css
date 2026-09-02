@@ -1,0 +1,583 @@
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background: var(--surface);
+}
+
+
+/* ========================================
+   HERO BACKGROUND IMAGE
+======================================== */
+
+.hero-background {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  opacity: 0.55;
+}
+
+
+/* ========================================
+   CENTER READABILITY OVERLAY
+======================================== */
+
+.hero-center-overlay {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background: radial-gradient(
+    ellipse 58% 62% at 50% 50%,
+    color-mix(
+      in oklab,
+      var(--surface) 94%,
+      transparent
+    ) 35%,
+    color-mix(
+      in oklab,
+      var(--surface) 55%,
+      transparent
+    ) 72%,
+    transparent 100%
+  );
+}
+
+
+/* ========================================
+   TOP / BOTTOM GRADIENT
+======================================== */
+
+.hero-gradient-overlay {
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background: linear-gradient(
+    to bottom,
+    color-mix(
+      in oklab,
+      var(--surface) 45%,
+      transparent
+    ),
+    transparent 25%,
+    color-mix(
+      in oklab,
+      var(--surface) 75%,
+      transparent
+    )
+  );
+}
+
+
+/* ========================================
+   HERO CONTENT
+======================================== */
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 64rem;
+
+  margin: 0 auto;
+
+  /* Reduced top space */
+  padding: 2.5rem 1.25rem 5rem;
+
+  text-align: center;
+}
+
+
+/* ========================================
+   HERO LOGO
+======================================== */
+
+.hero-logo {
+  display: block;
+
+  width: 220px;
+  height: auto;
+
+  margin: 0 auto;
+}
+
+
+/* ========================================
+   GOVERNMENT REGISTERED BADGE
+======================================== */
+
+.hero-badge {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  margin-top: 1.5rem;
+
+  padding: 0.375rem 1rem;
+
+  border: 1px solid
+    color-mix(
+      in oklab,
+      var(--accent) 30%,
+      transparent
+    );
+
+  border-radius: 9999px;
+
+  background: color-mix(
+    in oklab,
+    var(--accent) 10%,
+    transparent
+  );
+
+  color: var(--accent-foreground);
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  backdrop-filter: blur(4px);
+}
+
+
+/* ========================================
+   BADGE ICON
+======================================== */
+
+.hero-badge-icon {
+  width: 1rem;
+  height: 1rem;
+
+  flex-shrink: 0;
+}
+
+
+/* ========================================
+   HERO TITLE
+======================================== */
+
+.hero-title {
+  margin: 1.5rem 0 0;
+
+  color: var(--foreground);
+
+  font-size: 2.15rem;
+
+  font-weight: 800;
+
+  line-height: 1.05;
+}
+
+
+/* ========================================
+   HERO TAGLINE
+======================================== */
+
+.hero-tagline {
+  margin: 0.9rem 0 0;
+
+  color: var(--primary);
+
+  font-family: var(--font-display, inherit);
+
+  font-size: 1.125rem;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+/* ========================================
+   HERO DESCRIPTION
+======================================== */
+
+.hero-description {
+  max-width: 42rem;
+
+  margin: 1.1rem auto 0;
+
+  color: var(--muted-foreground);
+
+  font-size: 1rem;
+
+  line-height: 1.625;
+}
+
+
+/* ========================================
+   HERO ACTIONS
+   MOBILE = VERTICAL
+======================================== */
+
+.hero-actions {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.75rem;
+
+  width: 100%;
+
+  margin-top: 2rem;
+}
+
+
+/* ========================================
+   WHATSAPP BUTTON
+======================================== */
+
+.hero-whatsapp {
+  width: 100%;
+}
+
+
+/* ========================================
+   CALL BUTTON
+======================================== */
+
+.hero-call-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  width: 100%;
+
+  padding: 0.875rem 1.5rem;
+
+  border: 1px solid var(--border);
+
+  border-radius: 9999px;
+
+  background: var(--card);
+
+  color: var(--foreground);
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  transition:
+    background-color 200ms ease,
+    color 200ms ease,
+    border-color 200ms ease,
+    transform 200ms ease;
+}
+
+
+.hero-call-button:hover {
+  background: var(--secondary);
+
+  transform: translateY(-1px);
+}
+
+
+/* ========================================
+   CALL ICON
+======================================== */
+
+.hero-phone-icon {
+  width: 1rem;
+  height: 1rem;
+
+  flex-shrink: 0;
+}
+
+
+/* ========================================
+   FADE UP ANIMATION
+======================================== */
+
+.fade-up {
+  animation: heroFadeUp 0.7s ease-out both;
+}
+
+
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ========================================
+   TABLET
+   640px+
+======================================== */
+
+@media (min-width: 640px) {
+
+  .hero-background {
+    background-size: cover;
+
+    opacity: 0.6;
+  }
+
+
+  .hero-content {
+    padding-top: 3.5rem;
+    padding-bottom: 6rem;
+  }
+
+
+  /* Bigger tablet logo */
+
+  .hero-logo {
+    width: 280px;
+  }
+
+
+  .hero-badge {
+    margin-top: 1.75rem;
+
+    font-size: 0.875rem;
+  }
+
+
+  .hero-title {
+    margin-top: 1.75rem;
+
+    font-size: 3rem;
+  }
+
+
+  .hero-tagline {
+    margin-top: 0.9rem;
+
+    font-size: 1.5rem;
+  }
+
+
+  .hero-description {
+    margin-top: 1.15rem;
+
+    font-size: 1rem;
+  }
+
+
+  .hero-actions {
+    margin-top: 2.25rem;
+  }
+}
+
+
+/* ========================================
+   DESKTOP
+   768px+
+   
+   BUTTONS = HORIZONTAL
+======================================== */
+
+@media (min-width: 768px) {
+
+  .hero-actions {
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.75rem;
+  }
+
+
+  .hero-whatsapp,
+  .hero-call-button {
+    width: auto;
+  }
+
+
+  .hero-whatsapp {
+    min-width: 300px;
+  }
+
+
+  .hero-call-button {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+}
+
+
+/* ========================================
+   LARGE DESKTOP
+   1024px+
+======================================== */
+
+@media (min-width: 1024px) {
+
+  .hero-content {
+    padding-top: 4.5rem;
+    padding-bottom: 7rem;
+  }
+
+
+  /* Large desktop logo */
+
+  .hero-logo {
+    width: 340px;
+  }
+
+
+  .hero-badge {
+    margin-top: 1.75rem;
+  }
+
+
+  .hero-title {
+    margin-top: 1.75rem;
+
+    font-size: 3.75rem;
+  }
+
+
+  .hero-tagline {
+    font-size: 1.5rem;
+  }
+
+
+  .hero-description {
+    max-width: 44rem;
+  }
+
+
+  .hero-actions {
+    margin-top: 2.25rem;
+  }
+}
+
+
+/* ========================================
+   EXTRA LARGE DESKTOP
+   1280px+
+======================================== */
+
+@media (min-width: 1280px) {
+
+  .hero-content {
+    max-width: 64rem;
+
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+  }
+
+
+  /* Large but balanced logo */
+
+  .hero-logo {
+    width: 280px;
+  }
+
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+
+  .hero-tagline {
+    font-size: 1.6rem;
+  }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+   380px and below
+======================================== */
+
+@media (max-width: 380px) {
+
+  .hero-content {
+    padding: 2rem 1rem 4rem;
+  }
+
+
+  .hero-logo {
+    width: 190px;
+  }
+
+
+  .hero-badge {
+    margin-top: 1.25rem;
+
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+
+    font-size: 0.7rem;
+  }
+
+
+  .hero-title {
+    margin-top: 1.25rem;
+
+    font-size: 2rem;
+  }
+
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+
+  .hero-description {
+    font-size: 0.9375rem;
+  }
+
+
+  .hero-actions {
+    margin-top: 1.75rem;
+  }
+}
+
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .fade-up {
+    animation: none;
+  }
+
+
+  .hero-call-button {
+    transition: none;
+  }
+}

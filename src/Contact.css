@@ -1,0 +1,546 @@
+/* ========================================
+   CONTACT SECTION
+======================================== */
+
+.contact-section {
+  width: 100%;
+
+  padding: 5rem 0;
+
+  background: var(--surface);
+}
+
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.contact-container {
+  width: 100%;
+  max-width: 72rem;
+
+  margin: 0 auto;
+
+  padding: 0 1.25rem;
+}
+
+
+/* ========================================
+   SECTION HEADING
+======================================== */
+
+.contact-heading {
+  width: 100%;
+  max-width: 42rem;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* Small eyebrow */
+
+.section-eyebrow {
+  margin: 0;
+
+  color: var(--accent);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.16em;
+}
+
+
+/* Main heading */
+
+.contact-title {
+  margin: 0.75rem 0 0;
+
+  color: var(--foreground);
+
+  font-size: 1.875rem;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+/* Description */
+
+.contact-description {
+  margin: 1rem 0 0;
+
+  color: var(--muted-foreground);
+
+  font-size: 1rem;
+
+  line-height: 1.625;
+}
+
+
+/* ========================================
+   CONTACT CARDS
+======================================== */
+
+.contact-cards {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 1.25rem;
+
+  margin: 3rem 0 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+
+/* ========================================
+   SINGLE CARD
+======================================== */
+
+.contact-card {
+  padding: 1.75rem;
+
+  border: 1px solid var(--border);
+
+  border-radius: 1rem;
+
+  background: var(--card);
+
+  box-shadow:
+    0 1px 2px rgb(0 0 0 / 0.03);
+
+  transition:
+    transform 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease;
+}
+
+
+.contact-card:hover {
+  transform: translateY(-2px);
+
+  border-color: color-mix(
+    in oklab,
+    var(--accent) 35%,
+    var(--border)
+  );
+
+  box-shadow:
+    0 8px 24px rgb(0 0 0 / 0.06);
+}
+
+
+/* ========================================
+   CARD ICON
+======================================== */
+
+.contact-icon {
+  display: grid;
+
+  width: 3rem;
+  height: 3rem;
+
+  place-items: center;
+
+  border-radius: 0.75rem;
+
+  background: color-mix(
+    in oklab,
+    var(--accent) 12%,
+    transparent
+  );
+
+  color: var(--accent);
+}
+
+
+.contact-icon-svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+
+/* ========================================
+   CARD LABEL
+======================================== */
+
+.contact-card-label {
+  margin: 1.25rem 0 0;
+
+  color: var(--muted-foreground);
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.16em;
+}
+
+
+/* ========================================
+   CARD VALUE
+======================================== */
+
+.contact-card-value {
+  display: block;
+
+  margin-top: 0.5rem;
+
+  color: var(--foreground);
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  word-break: break-word;
+
+  text-decoration: none;
+
+  transition: color 200ms ease;
+}
+
+
+.contact-card-value:hover {
+  color: var(--accent);
+}
+
+
+/* ========================================
+   CARD HINT
+======================================== */
+
+.contact-card-hint {
+  margin: 0.5rem 0 0;
+
+  color: var(--muted-foreground);
+
+  font-size: 0.75rem;
+
+  line-height: 1.5;
+}
+
+
+/* ========================================
+   CTA CARD
+======================================== */
+
+.contact-cta {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 1.25rem;
+
+  margin-top: 2rem;
+
+  padding: 2rem;
+
+  border: 1px solid var(--border);
+
+  border-radius: 1rem;
+
+  background: var(--card);
+
+  text-align: center;
+}
+
+
+/* ========================================
+   CTA TITLE
+======================================== */
+
+.contact-cta-title {
+  margin: 0;
+
+  color: var(--foreground);
+
+  font-size: 1.5rem;
+
+  font-weight: 700;
+
+  line-height: 1.25;
+}
+
+
+/* ========================================
+   CTA DESCRIPTION
+======================================== */
+
+.contact-cta-description {
+  width: 100%;
+  max-width: 36rem;
+
+  margin: 0;
+
+  color: var(--muted-foreground);
+
+  font-size: 0.875rem;
+
+  line-height: 1.625;
+}
+
+
+/* ========================================
+   CTA BUTTONS
+   MOBILE = VERTICAL
+======================================== */
+
+.contact-cta-actions {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: stretch;
+
+  justify-content: center;
+
+  gap: 0.75rem;
+
+  width: 100%;
+}
+
+
+/* ========================================
+   WHATSAPP BUTTON
+======================================== */
+
+.contact-whatsapp-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  width: 100%;
+
+  padding: 0.875rem 1.75rem;
+
+  border: 1px solid transparent;
+
+  border-radius: 9999px;
+
+  background: var(--accent);
+
+  color: var(--accent-foreground);
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  box-shadow:
+    0 8px 20px
+    color-mix(
+      in oklab,
+      var(--accent) 25%,
+      transparent
+    );
+
+  transition:
+    filter 200ms ease,
+    transform 200ms ease;
+}
+
+
+.contact-whatsapp-button:hover {
+  filter: brightness(1.05);
+
+  transform: translateY(-1px);
+}
+
+
+/* ========================================
+   CALL BUTTON
+======================================== */
+
+.contact-call-button {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  width: 100%;
+
+  padding: 0.875rem 1.75rem;
+
+  border: 1px solid var(--border);
+
+  border-radius: 9999px;
+
+  background: var(--card);
+
+  color: var(--foreground);
+
+  font-size: 1rem;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  text-decoration: none;
+
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease;
+}
+
+
+.contact-call-button:hover {
+  background: var(--secondary);
+}
+
+
+/* ========================================
+   BUTTON ICON
+======================================== */
+
+.contact-button-icon {
+  width: 1rem;
+  height: 1rem;
+
+  flex-shrink: 0;
+}
+
+
+/* ========================================
+   TABLET
+   640px+
+======================================== */
+
+@media (min-width: 640px) {
+
+  .contact-section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+
+  .contact-title {
+    font-size: 2.25rem;
+  }
+
+
+  .contact-cta {
+    padding: 2.5rem;
+  }
+}
+
+
+/* ========================================
+   DESKTOP
+   768px+
+======================================== */
+
+@media (min-width: 768px) {
+
+  /* 3 cards in one row */
+
+  .contact-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+
+  /* CTA buttons horizontal */
+
+  .contact-cta-actions {
+    flex-direction: row;
+
+    align-items: center;
+
+    width: auto;
+  }
+
+
+  .contact-whatsapp-button,
+  .contact-call-button {
+    width: auto;
+  }
+
+
+  .contact-whatsapp-button {
+    min-width: 250px;
+  }
+}
+
+
+/* ========================================
+   LARGE DESKTOP
+   1024px+
+======================================== */
+
+@media (min-width: 1024px) {
+
+  .contact-section {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+
+  .contact-cards {
+    gap: 1.5rem;
+  }
+
+
+  .contact-card {
+    padding: 2rem;
+  }
+
+
+  .contact-cta {
+    margin-top: 2rem;
+
+    padding: 2.5rem 3rem;
+  }
+}
+
+
+/* ========================================
+   EXTRA LARGE
+   1280px+
+======================================== */
+
+@media (min-width: 1280px) {
+
+  .contact-container {
+    max-width: 72rem;
+  }
+}
+
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .contact-card,
+  .contact-whatsapp-button,
+  .contact-call-button {
+    transition: none;
+  }
+}
