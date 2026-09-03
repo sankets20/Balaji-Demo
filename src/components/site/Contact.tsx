@@ -46,7 +46,7 @@ export function Contact() {
           <p className="contact-description">
             Questions about lottery ticket availability or details?
             Call us, message us on WhatsApp, or visit our office
-            in Sitabuldi, Nagpur.
+            in Ramdaspeth, Nagpur.
           </p>
         </div>
 
