@@ -5,27 +5,36 @@
   right: 0;
   z-index: 9999;
   width: 100%;
-  border-bottom: 1px solid hsl(var(--border) / 0.7);
-  background: hsl(var(--background) / 0.95);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+
+  /* Glass / Blur Effect */
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
+/* Header Container */
 .header-container {
   width: 100%;
   max-width: 72rem;
   height: 5rem;
   margin: 0 auto;
   padding: 0 1.25rem;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+/* Logo */
 .header-logo {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  text-decoration: none;
 }
 
 /* Desktop Navigation */
@@ -44,18 +53,35 @@
   display: flex;
   width: 2.75rem;
   height: 2.75rem;
+
   align-items: center;
   justify-content: center;
-  border: 1px solid hsl(var(--border));
+
+  border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 0.5rem;
-  background: transparent;
+
+  background: rgba(255, 255, 255, 0.7);
+  color: #111827;
+
   cursor: pointer;
+}
+
+.mobile-menu-button:hover {
+  background: rgba(255, 255, 255, 0.95);
 }
 
 /* Mobile Navigation */
 .mobile-navigation {
-  border-top: 1px solid hsl(var(--border));
-  background: hsl(var(--background));
+  width: 100%;
+  box-sizing: border-box;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
   padding: 0.75rem 1.25rem 1.25rem;
 }
 
@@ -81,22 +107,21 @@
 /* Mobile */
 @media (max-width: 767px) {
   .header-container {
-    height: 3.75rem;
+    height: 5.75rem;
     padding: 0 1rem;
   }
 }
 
 /*
-  IMPORTANT:
-  Fixed navbar ke neeche content hide na ho.
-  Navbar desktop = 5rem
-  Navbar mobile = 5.75rem
+  Fixed navbar ke neeche content hide na ho
 */
 
+/* Desktop */
 main {
   padding-top: 5rem;
 }
 
+/* Mobile */
 @media (max-width: 767px) {
   main {
     padding-top: 5.75rem;
