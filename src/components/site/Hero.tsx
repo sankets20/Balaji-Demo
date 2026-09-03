@@ -1,7 +1,7 @@
 import { ShieldCheck, Phone } from "lucide-react";
 import { site, telUrl } from "../../config/site";
 import { WhatsAppButton } from "./WhatsAppButton";
-import heroTickets from "../../assets/hero-tickets.jpg";
+import heroTickets from "../../assets/Home.png";
 import { Logo } from "./Logo";
 import "../../Hero.css";
 
@@ -36,7 +36,7 @@ export function Hero() {
             className="hero-badge-icon"
             aria-hidden="true"
           />
-          Government Registered Distributor · Since {site.since}
+          Government Authorised Distributor · Since {site.since}
         </span>
 
         <h1 className="hero-title">

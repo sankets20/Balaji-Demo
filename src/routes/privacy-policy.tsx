@@ -10,7 +10,7 @@ export const Route = createFileRoute("/privacy-policy")({
       {
         name: "description",
         content:
-          "Privacy policy of Balaji Marketing, a government registered lottery distributor in Nagpur, Maharashtra.",
+          "Privacy policy of Balaji Marketing, a government authorised lottery distributor in Nagpur, Maharashtra.",
       },
       { property: "og:title", content: "Privacy Policy | Balaji Marketing" },
       { property: "og:description", content: "How Balaji Marketing handles customer information." },

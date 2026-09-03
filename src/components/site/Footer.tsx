@@ -14,7 +14,7 @@ export function Footer() {
           </span>
 
           <p className="mt-4 text-sm leading-relaxed text-footer-foreground/70">
-            Government Registered Lottery Distributor in Nagpur.
+            Government Authorised Lottery Distributor in Nagpur.
             <br />
             In Business Since {site.since}.
           </p>

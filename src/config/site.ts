@@ -4,17 +4,17 @@
  */
 export const site = {
   name: "Balaji Marketing",
-  tagline: "Government Registered Lottery Distributor in Nagpur",
+  tagline: "Serving Customers Across Maharashtra",
   since: "2001",
-  email: "help@statelotteryticket.com",
+  email: "Balajimarketing62@gmail.com",
   /** Display phone number */
-  phone: "+91-7559-397-393",
+  phone: "+91-7722-099-288 ",
   /** Digits only, with country code, used for wa.me links */
-  whatsappNumber: "917559397393",
+  whatsappNumber: "917722099288",
   address: {
-    line1: "Humpyard Rd, Hanuman Gali",
-    line2: "Sitabuldi, Nagpur, Maharashtra 440012",
-  },
+  line1: "Block No. 11, Ghatate Chamber, Panchsheel Square",
+  line2: "Ramdas Peth, Nagpur, Maharashtra 440012",
+},
   legalNotice:
     "We only sell Paper Lottery Tickets. All our sales are governed by Lottery Act 1998 & Rules 2010.",
   defaultWhatsappMessage:
